@@ -1,0 +1,113 @@
+*{
+	box-sizing:border-box;
+	/*so the width and height aren't changed by padding and margin*/
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*shorthand for all classs beginning with col- (12 columns)*/
+[class*="col-"] {
+    float: left;
+    padding: 10px 15px;
+}
+
+/* for mobile phones */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* for desktop */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	font-weight: 400;
+	color: #546E7A;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+a{
+	color: #B71C1C;
+	text-decoration: none;
+}
+
+h1{
+	color:#263238;
+	font-size:22px;
+}
+
+h2{
+	color:#263238;
+	font-size:20px;
+}
+/*adapted from stackoverflow comment on image responsiveness*/
+img{
+	max-width:100%;
+	display:block;
+	height:auto;
+}
+
+.large{
+	font-size:18px;
+	color:#37474F;
+}
+
+.small{
+	font-size:14px;
+	color: #B0BEC5;
+}
+/*header img for */
+#header img{
+	height:500px;
+	margin: 0 auto;
+}
+#nav{
+	margin:0 auto;
+}
+#nav ul{
+	list-style-type:none;
+}
+#nav ul li{
+	padding:5px;
+	margin: 0 5px;
+	display:inline-block;
+}
+#nav li:hover{
+	text-decoration: underline;
+}
+
+.box{
+	text-align:left;
+	margin: 0 auto;
+}
+
+.box img{
+	;
+}
+
+#footer{
+	background-color:#B0BEC5;
+}
+
+#footer .small{
+	color:#ffffff; 
+}

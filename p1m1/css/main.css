@@ -1,0 +1,35 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	font-weight: 400;
+	color: #546E7A;
+}
+
+a{
+	color: #B71C1C;
+}
+
+h1{
+	color:#263238;
+	font-size:22px;
+}
+
+h2{
+	color:#263238;
+	font-size:20px;
+}
+
+.large{
+	font-size:18px;
+	color:#37474F;
+}
+
+.small{
+	font-size:14px;
+	color: #B0BEC5;
+}
+
